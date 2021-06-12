@@ -20,23 +20,41 @@ public class Futbolista extends SeleccionFutbol {
 		this.dorsal = dorsal;
 		this.demarcacion = demarcacion;
 	}
+	
+	
+	//Especializacion : sobreescritura de metodos de la clase padre 
+	@Override
+	public void entrenar() {
+		System.out.println("Realiza un Entrenamiento (Clase Futbolista) ");
+	}
 
-	// metodos especificos de la clase hija
+	@Override
 	public void jugarPartido() {
+		System.out.println("Juega un Partido (Clase Futbolista) ");
+	}
+	//metodo propio de la clase Futbolista
+	public void entrevista() {
+		System.out.println("da una entrevista (Clase Futbolista) ");
+	}	
+	
+	
+	
+	// metodos especificos de la clase hija
+	/*public void jugarPartido() {
 		System.out.println("Futbolista ,jugarPartido()");
 	}
 
 	public void entrenar() {
 		System.out.println("Futbolista ,entrenar()");
-	}
+	}*/
 	
 	//el override es metadata , que chequea que en la clase padre
 	//exista el metodo que intentamos sobreescribir
 	//@Override no es obligatorio , si recomendable 
-	@Override
+	/*@Override
 	public void viajar() {
 		System.out.println("Futbolista viaja en clase ejecutiva,viajar()");
-	}
+	}*/
 	// gets & sets
 	public int getDorsal() {
 		return dorsal;

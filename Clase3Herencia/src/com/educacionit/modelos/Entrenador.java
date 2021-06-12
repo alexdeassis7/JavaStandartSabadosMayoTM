@@ -18,14 +18,30 @@ public class Entrenador extends SeleccionFutbol {
 	}
 
 	// metodo especifico de la clase hija
-	public void dirigirPartido() {
+	/*public void dirigirPartido() {
 		System.out.println("Entrenador ,dirigirPartido()");
 	}
 
 	public void dirigirEntrenamiento() {
 		System.out.println("Entrenador ,dirigirEntrenamiento()");
+	}*/
+
+	@Override
+	public void entrenar() {
+		System.out.println("Dirige un entrenamiento (Clase Entrenador) ");
+	}
+	
+	@Override
+	public void jugarPartido() {
+		System.out.println("Dirige un Partido (Clase Entrenador) ");		
 	}
 
+	//metodo propio de la clase Entrenador
+	public void planificarEntrenamiento() {
+		System.out.println("Planifica un Entrenamiento (Clase Entrenador) ");		
+	}
+
+	
 	// gets & sets
 	public String getIdFederacion() {
 		return idFederacion;
@@ -34,5 +50,6 @@ public class Entrenador extends SeleccionFutbol {
 	public void setIdFederacion(String idFederacion) {
 		this.idFederacion = idFederacion;
 	}
+
 
 }

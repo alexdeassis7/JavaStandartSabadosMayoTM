@@ -20,11 +20,18 @@ public class Masajista extends SeleccionFutbol {
 		this.aniosExperiencia = aniosExperiencia;
 	}
 
-	// metodo especifico de la clase hija
+	// metodo especifico de la clase hija Masajista
 	public void darMasaje() {
-		System.out.println("Masajista ,darMasaje() ");
+		System.out.println("Masajista ,darMasaje() (Clase Masajista)");
 	}
 
+	//sobreescribimos el metodo de la clase padre 
+	@Override //anotaciones 
+	public void entrenar() {
+		System.out.println("Da Asistencia en el Entrenamiento (Clase Masajista)");
+	}
+	
+	
 	// gets & sets
 	public String getTitulacion() {
 		return titulacion;
