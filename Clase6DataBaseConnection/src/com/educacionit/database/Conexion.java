@@ -36,9 +36,34 @@ public class Conexion {
 			System.out.println(e.getMessage());
 		}
 	}
-	
-	public static void main(String[] args) {
-		Conexion conex = new Conexion();
+
+	// metodo que nos retorna la conexion
+	public Connection getConnection() {
+
+		if (conn != null) {
+			return conn;
+		} else {
+			return null;
+		}
+
 	}
+
+	// metodo que me permite desconectar de la base de datos
+	public void desconectar() {
+		if (conn != null) {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+			conn = null;
+			System.out.println("Se logro cerrar correctamente la conexion a la DB " + db);
+		}
+	}
+
+//	public static void main(String[] args) {
+//		Conexion conex = new Conexion();
+//	}
 
 }
