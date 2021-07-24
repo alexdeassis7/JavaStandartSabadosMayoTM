@@ -1,0 +1,7 @@
+Existe el archivo fuente.txt ? true
+Ruta del archivo fuente.txt es : C:\Users\W112550\Documents\SabadoJEE\Clase8ManejoDeArchivos\archivoES\entrada\fuente.txt
+tamaño en bytes del archivo : 12
+fecha de modificacion : 1626531102589
+El Archivo Se esta Copiando...
+Se copio exitosamente el archivo fuente.txt en destino.txt
+alex
